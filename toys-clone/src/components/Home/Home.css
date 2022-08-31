@@ -1,0 +1,42 @@
+
+.projects-section {
+  width: 100vw;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0px auto 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 3rem 2rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 5px;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+  height: 25rem;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.project p {
+  line-height: 4rem;
+  align-self: center;
+  color: var(--clr-black);
+}

@@ -1,0 +1,23 @@
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.person:last-of-type {
+  margin-bottom: 0;
+}
+
+.person img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+}

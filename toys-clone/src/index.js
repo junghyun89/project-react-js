@@ -5,6 +5,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import BDReminder from './components/BDReminder/BDReminder';
 import Tours from './components/Tours/Tours';
 import App from './App';
+import Reviews from './components/Reviews/Reviews';
+import Accordion from './components/Accordion/Accordion';
+import Menu from './components/Menu/Menu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +16,9 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="BDreminder" element={<BDReminder />} />
       <Route path="tours" element={<Tours />} />
+      <Route path="reviews" element={<Reviews />} />
+      <Route path="accordion" element={<Accordion />} />
+      <Route path="menu" element={<Menu />} />
     </Routes>
   </BrowserRouter>
 );

@@ -18,9 +18,8 @@
 }
 
 .project {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-rows: 335px 1fr;
   border-radius: 5px;
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
@@ -41,7 +40,8 @@
 }
 
 .project p {
-  line-height: 4rem;
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--clr-black);
 }

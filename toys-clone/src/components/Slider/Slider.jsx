@@ -19,7 +19,7 @@ const Slider = () => {
   }
 
   function nextPerson() {
-    setPosition('next-slide');
+    setPosition('show-next');
     setIndex((prev) => {
       let newIndex = prev + 1;
       return checkNumber(newIndex);
@@ -27,7 +27,7 @@ const Slider = () => {
   }
 
   function prevPerson() {
-    setPosition('last-slide');
+    setPosition('show-last');
     setIndex((prev) => {
       let newIndex = prev - 1;
       return checkNumber(newIndex);
@@ -36,7 +36,7 @@ const Slider = () => {
 
   useEffect(() => {
     let slider = setInterval(() => {
-      setPosition('next-slide');
+      setPosition('show-next');
       setIndex((prev) => {
         let newIndex = prev + 1;
         return checkNumber(newIndex);
@@ -56,7 +56,7 @@ const Slider = () => {
             <span>/</span>Reviews
           </h2>
         </div>
-        <article className={`person-section active ${position}`} key={id}>
+        <article className={`person-section ${position}`} key={id}>
           <img src={image} alt={name} className="person-img" />
           <h4>{name}</h4>
           <p className="title">{title}</p>

@@ -1,0 +1,109 @@
+.color-container {
+  width: 80vw;
+  height: 100%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.color-container .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.color-container h2 {
+  margin-bottom: 0;
+}
+
+.color-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-container input {
+  border-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+  outline: none;
+}
+
+.color-container input.error {
+  border: 2px solid var(--clr-red-dark);
+}
+
+.color-container button {
+  background: var(--clr-green-light);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-color: transparent;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  text-transform: capitalize;
+  color: var(--clr-white);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.color-container button:hover {
+  background: var(--clr-green-dark);
+}
+
+.color-container .colors {
+  display: grid;
+  width: 80vw;
+  height: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+}
+
+.color {
+  height: 13rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.color-container .percent-value {
+  margin-bottom: 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: var(--clr-black);
+}
+
+.color-container .color-value {
+  color: var(--clr-black);
+  margin-bottom: 0;
+  padding: 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.color-container .color-value:hover {
+  background: var(--clr-black);
+  color: var(--clr-white);
+}
+
+.color-container .color-light .color-value,
+.color-container .color-light .percent-value,
+.color-container .color-light .alert {
+  color: var(--clr-white);
+}
+
+.color-container .color-light .color-value:hover {
+  color: var(--clr-black);
+  background: var(--clr-white);
+}
+
+.color-container .alert {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+}

@@ -10,6 +10,8 @@ import Accordion from './components/Accordion/Accordion';
 import Menu from './components/Menu/Menu';
 import Tabs from './components/Tabs/Tabs';
 import Slider from './components/Slider/Slider';
+import LoremGenerator from './components/LoremGenerator/LoremGenerator';
+import ColorGenerator from './components/ColorGenerator/ColorGenerator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +25,8 @@ root.render(
       <Route path="menu" element={<Menu />} />
       <Route path="tabs" element={<Tabs />} />
       <Route path="slider" element={<Slider />} />
+      <Route path="lorem-generator" element={<LoremGenerator />} />
+      <Route path="color-generator" element={<ColorGenerator />} />
     </Routes>
   </BrowserRouter>
 );

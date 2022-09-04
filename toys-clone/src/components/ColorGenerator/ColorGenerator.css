@@ -40,7 +40,7 @@
 }
 
 .color-container button {
-  background: var(--clr-green-light);
+  background: var(--clr-primary-6);
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-color: transparent;
@@ -53,7 +53,7 @@
 }
 
 .color-container button:hover {
-  background: var(--clr-green-dark);
+  background: var(--clr-primary-7);
 }
 
 .color-container .colors {

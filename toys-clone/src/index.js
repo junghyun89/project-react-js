@@ -12,13 +12,16 @@ import Tabs from './components/Tabs/Tabs';
 import Slider from './components/Slider/Slider';
 import LoremGenerator from './components/LoremGenerator/LoremGenerator';
 import ColorGenerator from './components/ColorGenerator/ColorGenerator';
+import ShoppingList from './components/ShoppingList/ShoppingList';
+import Navbar from './components/Navbar/Navbar';
+import Sidebar from './components/Sidebar/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="BDreminder" element={<BDReminder />} />
+      <Route path="birthday-reminder" element={<BDReminder />} />
       <Route path="tours" element={<Tours />} />
       <Route path="reviews" element={<Reviews />} />
       <Route path="accordion" element={<Accordion />} />
@@ -27,6 +30,9 @@ root.render(
       <Route path="slider" element={<Slider />} />
       <Route path="lorem-generator" element={<LoremGenerator />} />
       <Route path="color-generator" element={<ColorGenerator />} />
+      <Route path="shopping-list" element={<ShoppingList />} />
+      <Route path="navbar" element={<Navbar />} />
+      <Route path="sidebar" element={<Sidebar />} />
     </Routes>
   </BrowserRouter>
 );

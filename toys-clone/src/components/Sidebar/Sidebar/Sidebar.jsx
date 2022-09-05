@@ -1,7 +1,8 @@
 import React from 'react';
-import { useGlobalContext } from './context';
+import './Sidebar.css';
+import { useGlobalContext } from '../context';
 import { FaTimes } from 'react-icons/fa';
-import { social, links } from './sidebarData';
+import { social, links } from '../sidebarData';
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -9,7 +10,7 @@ const Sidebar = () => {
   return (
     <div className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
       <div className="sidebar-header">
-        <h2 className="logo">AnJung</h2>
+        <h3 className="logo">AnJung</h3>
         <FaTimes className="close-btn" onClick={closeSidebar} />
       </div>
       <ul className="links">

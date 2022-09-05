@@ -19,6 +19,7 @@ Variables
   --clr-primary-8: #0d503c;
   --clr-primary-9: #06281e;
   --clr-primary-10: hsl(205, 100%, 96%);
+  --clr-primary-11: #2680c0;
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(212, 33%, 89%);
   --clr-grey-2: hsl(210, 31%, 80%);
@@ -39,6 +40,7 @@ Variables
   --clr-red-special: #b4345c;
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
+  --clr-primary-light: #85c6f4;
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -109,6 +111,10 @@ h3 {
 }
 h4 {
   font-size: 0.875rem;
+}
+svg {
+  display: grid;
+  align-items: center;
 }
 @media screen and (min-width: 800px) {
   h1 {

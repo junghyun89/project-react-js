@@ -1,16 +1,17 @@
 import React from 'react';
-import Home from './Home';
-import Modal from './Modal/Modal';
+import Hero from './Hero/Hero';
+import Navbar from './Navbar/Navbar';
 import Sidebar from './Sidebar/Sidebar';
-import './index.css';
+import Submenu from './Submenu/Submenu';
 import { AppProvider } from './context';
 
 const App = () => {
   return (
     <AppProvider>
-      <Home />
-      <Modal />
+      <Navbar />
       <Sidebar />
+      <Hero />
+      <Submenu />
     </AppProvider>
   );
 };

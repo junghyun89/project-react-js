@@ -9,6 +9,8 @@ import image8 from '../../assets/lorem-generator.png';
 import image9 from '../../assets/color-generator.png';
 import image10 from '../../assets/shopping-list.png';
 import image11 from '../../assets/navbar.png';
+import image12 from '../../assets/sidebar.png';
+import image13 from '../../assets/stripe-menu.png';
 
 export const projectsData = [
   {
@@ -67,8 +69,18 @@ export const projectsData = [
     link: 'navbar',
   },
   {
-    image: image11,
+    image: image12,
     name: 'sidebar and modal',
     link: 'sidebar',
+  },
+  {
+    image: image13,
+    name: 'stripe menu',
+    link: 'stripe-menu',
+  },
+  {
+    image: image13,
+    name: 'cart',
+    link: 'cart',
   },
 ];

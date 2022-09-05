@@ -15,6 +15,8 @@ import ColorGenerator from './components/ColorGenerator/ColorGenerator';
 import ShoppingList from './components/ShoppingList/ShoppingList';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/App';
+import StripeMenu from './components/StripeMenu/App';
+import Cart from './components/Cart/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -33,6 +35,8 @@ root.render(
       <Route path="shopping-list" element={<ShoppingList />} />
       <Route path="navbar" element={<Navbar />} />
       <Route path="sidebar" element={<Sidebar />} />
+      <Route path="stripe-menu" element={<StripeMenu />} />
+      <Route path="cart" element={<Cart />} />
     </Routes>
   </BrowserRouter>
 );

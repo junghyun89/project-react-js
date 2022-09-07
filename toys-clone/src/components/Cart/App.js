@@ -1,13 +1,14 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import CartContainer from './CartContainer/CartContainer';
+import { AppProvider } from './context';
 
 const App = () => {
   return (
-    <div>
+    <AppProvider>
       <Navbar />
       <CartContainer />
-    </div>
+    </AppProvider>
   );
 };
 

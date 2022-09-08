@@ -17,6 +17,11 @@ import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/App';
 import StripeMenu from './components/StripeMenu/App';
 import Cart from './components/Cart/App';
+import Cocktails from './components/Cocktails/App';
+import Home from './components/Cocktails/pages/Home/Home';
+import About from './components/Cocktails/pages/About/About';
+import SingleCocktail from './components/Cocktails/pages/SingleCocktail/SingleCocktail';
+import Error from './components/Cocktails/pages/Error/Error';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -37,6 +42,7 @@ root.render(
       <Route path="sidebar" element={<Sidebar />} />
       <Route path="stripe-menu" element={<StripeMenu />} />
       <Route path="cart" element={<Cart />} />
+      <Route path="cocktails/*" element={<Cocktails />}></Route>
     </Routes>
   </BrowserRouter>
 );

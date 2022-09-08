@@ -12,7 +12,7 @@ Variables
   --clr-primary-3: hsl(162, 61%, 67%);
   --clr-primary-4: hsl(162, 61%, 57%);
   /* primary/main color */
-  --clr-primary-5: hsl(162, 73%, 46%);
+  --clr-primary-5: hsl(162, 25%, 39%);
   /* lighter shades of primary color */
   --clr-primary-6: #1aa179;
   --clr-primary-7: #13795b;
@@ -20,6 +20,9 @@ Variables
   --clr-primary-9: #06281e;
   --clr-primary-10: hsl(205, 100%, 96%);
   --clr-primary-11: #2680c0;
+  --primary-light: #d4e6a5;
+  --primary: #476a2e;
+  --primary-dark: #c02c03
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(212, 33%, 89%);
   --clr-grey-2: hsl(210, 31%, 80%);
@@ -32,6 +35,7 @@ Variables
   --clr-grey-8: hsl(211, 39%, 23%);
   --clr-grey-9: hsl(209, 61%, 16%);
   --clr-grey-10: hsl(210, 36%, 96%);
+  --dark-grey: #afafaf;
   --clr-grey-special: #eae6eb;
   --clr-white: #fff;
   --clr-gold: #c59d5f;
@@ -47,6 +51,8 @@ Variables
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --box-light-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --box-dark-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --max-width: 1170px;
   --fixed-width: 450px;
   --clr-pink: #f28ab2;
@@ -90,6 +96,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--clr-black);
 }
 h1,
 h2,

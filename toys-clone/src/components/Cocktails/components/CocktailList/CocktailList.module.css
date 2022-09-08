@@ -1,0 +1,21 @@
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.cocktails-center {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 576px) {
+  .cocktails-center {
+    grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+  }
+}

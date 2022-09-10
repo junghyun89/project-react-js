@@ -6,10 +6,15 @@ const SearchForm = () => {
   const { setSearchTerm } = useGlobalContext();
   const searchValue = useRef('');
 
-  function searchCocktail() {}
+  function searchCocktail() {
+    setSearchTerm(searchValue.current.value);
+  }
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
   return (
     <section className={styles['search']}>
-      <form className={styles['search-form']}>
+      <form className={styles['search-form']} onSubmit={handleSubmit}>
         <label htmlFor="name">search your favorite cocktail</label>
         <input
           type="text"

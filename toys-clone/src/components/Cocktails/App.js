@@ -14,7 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="cocktail-:id" element={<SingleCocktail />} />
+        <Route path="cocktail-:name" element={<SingleCocktail />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </AppProvider>

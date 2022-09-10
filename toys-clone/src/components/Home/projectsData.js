@@ -12,6 +12,7 @@ import image11 from '../../assets/navbar.png';
 import image12 from '../../assets/sidebar.png';
 import image13 from '../../assets/stripe-menu.png';
 import image14 from '../../assets/cart.png';
+import image15 from '../../assets/cocktails.png';
 
 export const projectsData = [
   {
@@ -85,7 +86,7 @@ export const projectsData = [
     link: 'cart',
   },
   {
-    image: image14,
+    image: image15,
     name: 'cocktails',
     link: 'cocktails',
   },

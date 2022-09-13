@@ -1,0 +1,21 @@
+.review-container {
+  max-width: 620px;
+}
+
+.title {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 3rem;
+}
+
+.title h2 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: var(--clr-primary-5);
+}
+

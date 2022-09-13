@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import data from './sliderData';
-import './Slider.css';
+import styles from './Slider.module.css';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
 
@@ -50,23 +50,26 @@ const Slider = () => {
   const { id, image, name, title, quote } = data[index];
   return (
     <main>
-      <section className="slider-container">
-        <div className="title">
+      <section className={styles['slider-container']}>
+        <div className={styles['header']}>
           <h2>
             <span>/</span>Reviews
           </h2>
         </div>
-        <article className={`person-section ${position}`} key={id}>
-          <img src={image} alt={name} className="person-img" />
+        <article
+          className={`${styles['person-section']} ${styles[position]}`}
+          key={id}
+        >
+          <img src={image} alt={name} className={styles['person-img']} />
           <h4>{name}</h4>
-          <p className="title">{title}</p>
-          <p className="text">{quote}</p>
-          <FaQuoteRight className="icon" />
+          <p className={styles['title']}>{title}</p>
+          <p className={styles['text']}>{quote}</p>
+          <FaQuoteRight className={styles['icon']} />
         </article>
-        <button className="prev" onClick={prevPerson}>
+        <button className={styles['prev']} onClick={prevPerson}>
           <FiChevronLeft />
         </button>
-        <button className="next" onClick={nextPerson}>
+        <button className={styles['next']} onClick={nextPerson}>
           <FiChevronRight />
         </button>
       </section>

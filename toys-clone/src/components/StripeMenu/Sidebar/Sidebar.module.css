@@ -46,12 +46,14 @@
 
 .sidebar article h4 {
   font-size: 1.25rem;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
 }
 
 .sidebar_sublinks {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 0.3rem;
+  row-gap: 0.8rem;
   padding: 0.3rem;
 }
 

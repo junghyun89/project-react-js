@@ -25,9 +25,10 @@ const Submenu = () => {
       setColumns('col-4');
     }
   }, [location, links]);
+
   return (
     <aside
-      className={`${styles.submenu} ${isSubmenuOpen ? styles.show : ''}`}
+      className={`${styles['submenu']} ${isSubmenuOpen ? styles['show'] : ''}`}
       ref={container}
     >
       <h4>{page}</h4>

@@ -1,0 +1,23 @@
+.accordion-container {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  max-width: 920px;
+  display: grid;
+  gap: 1rem 2rem;
+}
+
+.accordion-container h3 {
+  line-height: 2rem;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+
+@media screen and (min-width: 992px) {
+  .accordion-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+  }
+}

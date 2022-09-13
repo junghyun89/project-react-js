@@ -1,5 +1,5 @@
 import React from 'react';
-import './Modal.css';
+import styles from './Modal.module.css';
 import { FaTimes } from 'react-icons/fa';
 import { useGlobalContext } from '../context';
 
@@ -8,13 +8,13 @@ const Modal = () => {
 
   return (
     <div
-      className={`${
-        isModalOpen ? 'modal-overlay show-modal' : 'modal-overlay'
+      className={`${styles['modal-overlay']} ${
+        isModalOpen ? styles['show-modal'] : ''
       }`}
     >
-      <div className="modal-container">
+      <div className={styles['modal-container']}>
         <h3>modal content</h3>
-        <FaTimes className="close-modal-btn" onClick={closeModal} />
+        <FaTimes className={styles['close-modal-btn']} onClick={closeModal} />
       </div>
     </div>
   );

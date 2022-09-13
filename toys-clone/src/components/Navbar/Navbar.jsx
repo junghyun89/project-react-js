@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './Navbar.css';
+import styles from './Navbar.module.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { links, social } from './navData';
 
@@ -29,18 +29,18 @@ const Navbar = () => {
   }, [windowWidth]);
 
   return (
-    <div className="nav-container">
-      <div className="nav-header">
+    <div className={styles['nav-container']}>
+      <div className={styles['nav-header']}>
         <h2>AnJung</h2>
         <button
-          className="nav-toggle"
+          className={styles['nav-toggle']}
           onClick={() => setToggleActive(!toggleActive)}
         >
           {toggleActive ? <FaTimes /> : <FaBars />}
         </button>
       </div>
-      <div className="links-container" ref={linksContainerRef}>
-        <ul className="links" ref={linksRef}>
+      <div className={styles['links-container']} ref={linksContainerRef}>
+        <ul className={styles['links']} ref={linksRef}>
           {links.map((link) => {
             const { id, url, text } = link;
             return (
@@ -52,7 +52,7 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <ul className="social-icons">
+      <ul className={styles['social-icons']}>
         {social.map((socialIcon) => {
           const { id, url, icon } = socialIcon;
           return (

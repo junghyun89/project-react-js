@@ -1,0 +1,19 @@
+.alert {
+  width: 90%;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+
+.danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+
+.success {
+  color: #155724;
+  background: #d4edda;
+}

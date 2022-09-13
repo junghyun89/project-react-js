@@ -13,7 +13,7 @@ const SearchForm = () => {
     e.preventDefault();
   }
   return (
-    <section className={styles['search']}>
+    <div className={styles['search']}>
       <form className={styles['search-form']} onSubmit={handleSubmit}>
         <label htmlFor="name">search your favorite cocktail</label>
         <input
@@ -23,7 +23,7 @@ const SearchForm = () => {
           onChange={searchCocktail}
         />
       </form>
-    </section>
+    </div>
   );
 };
 

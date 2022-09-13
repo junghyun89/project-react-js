@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './LoremGenerator.css';
+import styles from './LoremGenerator.module.css';
 import data from './lorem-generatorData';
 
 const Generator = () => {
@@ -18,9 +18,13 @@ const Generator = () => {
 
   return (
     <main>
-      <section className="generator-container">
+      <section className={styles['generator-container']}>
         <h2>tired of boring lorem ipsum?</h2>
-        <form action="" onSubmit={handleSubmit} className="lorem-form">
+        <form
+          action=""
+          onSubmit={handleSubmit}
+          className={styles['lorem-form']}
+        >
           <label htmlFor="amount">paragraphs :</label>
           <input
             id="amount"
@@ -32,7 +36,7 @@ const Generator = () => {
           />
           <button>generate</button>
         </form>
-        <div className="result">
+        <div className={styles['result']}>
           {randomNums.map((num, index) => (
             <p key={index}>{data[num]}</p>
           ))}

@@ -5,8 +5,9 @@ import { useGlobalContext } from '../context';
 
 const Hero = () => {
   const { closeSubmenu } = useGlobalContext();
+  
   return (
-    <section className={styles['hero']} onMouseOver={closeSubmenu}>
+    <div className={styles['hero']} onMouseOver={closeSubmenu}>
       <div className={styles['hero-center']}>
         <article className={styles['hero-info']}>
           <h1>
@@ -24,7 +25,7 @@ const Hero = () => {
           <img src={phoneImg} className={styles['phone-img']} alt="phone" />
         </article>
       </div>
-    </section>
+    </div>
   );
 };
 

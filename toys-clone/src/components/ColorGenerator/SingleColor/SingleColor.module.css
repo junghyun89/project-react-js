@@ -1,0 +1,44 @@
+.color {
+  height: 13rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.percent-value {
+  margin-bottom: 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: var(--clr-black);
+}
+
+.color-value {
+  color: var(--clr-black);
+  margin-bottom: 0;
+  padding: 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.color-value:hover {
+  background: var(--clr-black);
+  color: var(--clr-white);
+}
+
+.color-light .color-value,
+.color-light .percent-value,
+.color-light .alert {
+  color: var(--clr-white);
+}
+
+.color-light .color-value:hover {
+  color: var(--clr-black);
+  background: var(--clr-white);
+}
+
+.alert {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+}

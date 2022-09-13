@@ -18,14 +18,14 @@ const CocktailList = () => {
     );
   }
   return (
-    <section>
+    <div>
       <h2 className={styles['section-title']}>cocktails</h2>
       <div className={styles['cocktails-center']}>
         {cocktails.map((item) => {
           return <Cocktail key={item.id} {...item} />;
         })}
       </div>
-    </section>
+    </div>
   );
 };
 

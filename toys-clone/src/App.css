@@ -1,11 +1,7 @@
 
-/*
-=============== 
-Variables
-===============
-*/
-
 :root {
+  --primary-light: #d4e6a5;
+  --primary: #476a2e;
   /* dark shades of primary color*/
   --clr-primary-1: hsl(162, 61%, 89%);
   --clr-primary-2: hsl(162, 60%, 78%);
@@ -18,11 +14,11 @@ Variables
   --clr-primary-7: #13795b;
   --clr-primary-8: #0d503c;
   --clr-primary-9: #06281e;
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
   --clr-primary-10: hsl(205, 100%, 96%);
   --clr-primary-11: #2680c0;
-  --primary-light: #d4e6a5;
-  --primary: #476a2e;
-  --primary-dark: #c02c03
+
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(212, 33%, 89%);
   --clr-grey-2: hsl(210, 31%, 80%);
@@ -42,8 +38,7 @@ Variables
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-red-special: #b4345c;
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
+
   --clr-primary-light: #85c6f4;
   --clr-black: #222;
   --transition: all 0.3s linear;
@@ -87,9 +82,14 @@ body {
 }
 main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+section {
+  width: 85vw;
+  margin: 4rem 0;
 }
 ul {
   list-style-type: none;
@@ -103,9 +103,6 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
 }
 h1 {
   font-size: 3rem;

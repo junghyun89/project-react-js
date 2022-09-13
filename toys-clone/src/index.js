@@ -2,26 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import BDReminder from './components/BDReminder/BDReminder';
-import Tours from './components/Tours/Tours';
+
+import BDReminder from './components/BDReminder/Reminder/Reminder';
+import Tours from './components/Tours/Tours/Tours';
 import App from './App';
-import Reviews from './components/Reviews/Reviews';
-import Accordion from './components/Accordion/Accordion';
-import Menu from './components/Menu/Menu';
-import Tabs from './components/Tabs/Tabs';
+import Reviews from './components/Reviews/Reviews/Reviews';
+import Accordion from './components/Accordion/Accordion/Accordion';
+import Menu from './components/Menu/Menu/Menu';
+import Tabs from './components/Tabs/Tabs/Tabs';
 import Slider from './components/Slider/Slider';
 import LoremGenerator from './components/LoremGenerator/LoremGenerator';
-import ColorGenerator from './components/ColorGenerator/ColorGenerator';
-import ShoppingList from './components/ShoppingList/ShoppingList';
+import ColorGenerator from './components/ColorGenerator/ColorGenerator/ColorGenerator';
+import ShoppingList from './components/ShoppingList/ShoppingList/ShoppingList';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/App';
 import StripeMenu from './components/StripeMenu/App';
 import Cart from './components/Cart/App';
 import Cocktails from './components/Cocktails/App';
-import Home from './components/Cocktails/pages/Home/Home';
-import About from './components/Cocktails/pages/About/About';
-import SingleCocktail from './components/Cocktails/pages/SingleCocktail/SingleCocktail';
-import Error from './components/Cocktails/pages/Error/Error';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

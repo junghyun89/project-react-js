@@ -1,7 +1,6 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  width: 85vw;
   margin: 0 auto;
   padding: 5rem 0;
   max-width: 40rem;
@@ -10,6 +9,7 @@
 .section-title {
   margin-bottom: 3rem;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .desc-box {

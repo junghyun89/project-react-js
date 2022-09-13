@@ -19,7 +19,7 @@ const Header = () => {
     };
   });
   return (
-    <header className={showNav ? styles['header'] : styles['header hide']}>
+    <header className={`${styles['header']} ${showNav ? '' : styles['hide']}`}>
       <div className={styles['header-container']}>
         <Link to="/">
           <h2>AnJung</h2>
